@@ -1,4 +1,4 @@
-geo
+cassini
 ===
 
 Geographical data visualization.
