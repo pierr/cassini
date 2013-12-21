@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pierr/cassini",
+  "authors": [
+    "Pierre <pierre.besson7@gmail.com>"
+  ],
+  "description": "Visualization application.",
+  "main": "app.js",
+  "keywords": [
+    "node",
+    "express",
+    "d3",
+    "dataviz"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
