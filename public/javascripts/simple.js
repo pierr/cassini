@@ -6,12 +6,21 @@
       type: "GET",
       dataType: "json",
       success: function (data) {
-		drawMap(data);
-		//$('div#dataContainer').html(JSON.stringify(data));
+      	//Load the configuration.
+		$.ajax({
+          url: '/config',
+          type: "GET",
+          dataType: "json",
+          success: function (config) {
+            drawMap(data, config);
+			//$('div#dataContainer').html(JSON.stringify(data));
+          }
+        });
       }
 	});
 
-	function drawMap(geojson){
+	function drawMap(geojson, config){
+		console.log('config: ', config);
       //Define the current with and heigth
       var width = 600;
       var height = 400;
