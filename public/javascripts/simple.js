@@ -39,15 +39,15 @@
       features.enter()
               .append("path")
               .attr('class', 'departement')
-              .attr('fill', function(d) { 
-                return colorScale(+d.properties.CODE_DEPT); 
+              .attr('fill', function(d) {
+                return colorScale(+d.properties.CODE_DEPT);
               })
              .attr("d", path)
              .on('click', countyClickHandler);
 
       var centered;
 	function countyClickHandler(d){
-		console.log('data:', d)
+		console.log('data:', d);
 		$('div#name').html(d.properties.NOM_DEPT);
 		//Source: http://bl.ocks.org/mbostock/2206340
         var x, y, k;
@@ -74,8 +74,7 @@
             .duration(1000)
             .attr("transform", trStr);
 		console.log('click handler');
-	}
- 
+      }
 	}
 	
 
