@@ -55,10 +55,10 @@
       .attr("d", path)
       .on('click', countyClickHandler)
       .append('text')
-      .attr('class', 'white')
-      .attr("dx", function(d){return -20;})
+      .attr('style', 'fill: #000000; stroke: none; font-size: 48px;')
+      .attr("x", function(d){return 10;})
+      .attr("y", function(d){return 10;})
       .text(function(d){return d.properties.ID_GEOFLA;});
-    
     var centered;
 
     function countyClickHandler(d) {
