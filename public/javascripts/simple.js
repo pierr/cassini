@@ -53,13 +53,17 @@
         return colorScale(config[''+d.properties.ID_GEOFLA]);
       })
       .attr("d", path)
-      .on('click', countyClickHandler);
-
+      .on('click', countyClickHandler)
+      .append('text')
+      .attr('class', 'white')
+      .attr("dx", function(d){return -20;})
+      .text(function(d){return d.properties.ID_GEOFLA;});
+    
     var centered;
 
     function countyClickHandler(d) {
       console.log('data:', d);
-      $('div#name').html(d.properties.NOM_DEPT);
+      $('div#name').html('<div class="arrow_box">'+'<h1 class="indicato">'+d.properties.NOM_DEPT+'</h1>'+'</div>');
       //Source: http://bl.ocks.org/mbostock/2206340
       var x, y, k;
       if (d && centered !== d) {

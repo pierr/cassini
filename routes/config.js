@@ -6,10 +6,10 @@
 exports.index = function(req, res){
   console.log(req.param('name'));
   /*Generate a fake config test.*/
-  var nColor = 5;
+  var nColor = 2;
   var configTest = {};
   for(var i =0; i<100;i++){
-    configTest[''+i] = Math.floor(Math.random()*(nColor+1));
+    configTest[''+i] = Math.floor(Math.random()*(nColor));
   }
   /*Real configuration.*/
   var jsonConfig = {
