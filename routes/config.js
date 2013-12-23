@@ -5,6 +5,13 @@
 
 exports.index = function(req, res){
   console.log(req.param('name'));
+  /*Generate a fake config test.*/
+  var nColor = 5;
+  var configTest = {};
+  for(var i =0; i<100;i++){
+    configTest[''+i] = Math.floor(Math.random()*(nColor+1));
+  }
+  /*Real configuration.*/
   var jsonConfig = {
     name: 'Nom du paramétrage',
     draw: {
@@ -16,5 +23,5 @@ exports.index = function(req, res){
       type: 'Type of data'
     }
   };
-  res.send(jsonConfig);
+  res.send(configTest);
 };
