@@ -1,13 +1,15 @@
 cassini
 ===
-
 Geographical data visualization.
+
+## Start the server
+```bash
+npm start
+```
+
 ## Dependencies
 - Express.js to serve data
 - Example client, build with brunch.io, Backbone.js, handlebars and bootstrap.
-## Author
-Pierre Besson
-
 
 ## Get some json for a country
 - Get French data: http://professionnels.ign.fr/geofla#tab-3
@@ -49,3 +51,6 @@ http://www.w3.org/TR/SVG/text.html#TextpathLayoutRules
         fill="none" stroke="blue" stroke-width="2" />
 </svg>
 ```
+## Author
+[Pierre Besson](http://pierr.github.io)
+
