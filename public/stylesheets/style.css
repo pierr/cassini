@@ -57,11 +57,18 @@ a {
 .white {
   color: #fff;
 }
-.chart div {
+/*.chart div
+  font: 10px sans-serif
+  background-color: steelblue
+  text-align: right
+  padding: 3px
+  margin: 1px
+  color: white*/
+.chart rect {
+  fill: #4682b4;
+}
+.chart text {
+  fill: #fff;
   font: 10px sans-serif;
-  background-color: #4682b4;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: #fff;
+  text-anchor: end;
 }
